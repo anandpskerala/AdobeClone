@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe: Creative, marketing and document management solutions</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-expand-lg py-1 px-lg-4 flex-column fixed-top bg-light">
+        <div class="nav d-flex flex-row justify-content-between">
+
+            <div class="nav-logo">
+                <span class="logo">
+                    <span class="nav-item" id="side-menu-button" onclick="loadMobileSidemenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                    </span>
+                    <a href="/" class="nav-link p-0">
+                        <img src="./assets/logo.png" alt="Adobe">
+                    </a>
+                    <a href="/" class="nav-link p-0">Adobe</a>
+                </span>
+
+                <ul class="nav-list m-0 justify-content-evenly">
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <span class="d-block">Creativity & Design</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                    </a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <span class="d-block">PDF & E-signatures</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                    </a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <span class="d-block">Marketing & Commerce</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                    </a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <span class="d-block">Help & Support</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                    </a></li>
+                </ul>
+            </div>
+
+            <ul class="nav-menu m-0 justify-content-evenly">
+                <li class="nav-item"><a href="" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 72C0 49.9 17.9 32 40 32l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40L0 72zM0 232c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48zM128 392l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40zM160 72c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48zM288 232l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40zM160 392c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48zM448 72l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40zM320 232c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48zM448 392l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40z" /></svg>
+                    </a></li>
+                    <li class="nav-item"><a href="" class="nav-link">
+                        <button type="button" class="btn btn-light p-0"><span>Sign in</span></button>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="nav mobile-nav flex-column start-0 d-lg-none" id="side-menu-mobile" style="display: none;">
+            <li class="nav-item"><a href="" class="nav-link">
+                <span class="d-block">Creativity & Design</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">
+                <span class="d-block">PDF & E-signatures</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </a></li>
+            <li class="nav-item"><a href="" class="nav-link">
+                <span class="d-block">Marketing & Commerce</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </a></li>
+            <li class="nav-item"><a href="" class="nav-link">
+                <span class="d-block">Help & Support</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </a></li>
+        </div>
+        
+        <div class="nav-content">
+            <span>Products</span>
+            <span>Shop for</span>
+            <span>Online tools</span>
+            <span>Adobe Pro</span>
+        </div>
+    </div>
+
+    <div class="section-1">
+        <div class="background">
+        </div>
+        <div class="section-content">
+            <pc class="heading">LIMITED-TIME OFFER</p>
+            <h1>Our best deal ever on Adobe Express for teams.</h1>
+            <p class="body-content">
+                Empower everyone on your team to create on-brand content for only US$49.99/person annually. Minimum two seats. Lock in for three years. Ends Sep 30. <a href="">See terms.</a>
+            </p>
+            <a href="#" class="button">Get the Offer</a>
+        </div>
+    </div>
+
+    <div class="section-2">
+        <div class="head">
+            <p class="title m-0">Get started fast with free tools.</p>
+            <div class="title-row">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M448 80c8.8 0 16 7.2 16 16l0 319.8-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3L48 96c0-8.8 7.2-16 16-16l384 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></svg>
+                    <span>Edit Photos</span>
+                </a>
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+                    <span>Edit Videos</span>
+                </a>
+            </div>
+            <div class="title-row">
+                <a href="">
+                    <svg width="16" height="18.667" viewBox="0 0 16 18.667">
+                        <g id="Group_596629" data-name="Group 596629" transform="translate(9504.006 9250.722)">
+                          <path id="Path_625435" data-name="Path 625435" d="M17.222,5.711V17.889H4.778V2.778H14.2ZM14.289,1H4.778A1.783,1.783,0,0,0,3,2.778V17.889a1.783,1.783,0,0,0,1.778,1.778H17.222A1.783,1.783,0,0,0,19,17.889V5.444a1.64,1.64,0,0,0-.444-1.067l-3.2-2.933A1.472,1.472,0,0,0,14.289,1Z" transform="translate(-9507.006 -9251.722)" fill="#444"></path>
+                          <path id="Path_625436" data-name="Path 625436" d="M17.5,5.943v12.22H5V3h9.462Z" transform="translate(-9507.254 -9251.97)" fill="#444" opacity="0.1"></path>
+                          <path id="Path_625437" data-name="Path 625437" d="M8.719,12.745a7.7,7.7,0,0,1-.483.628c-.078.09-.154.172-.228.247a1.284,1.284,0,0,1-.748.462.244.244,0,0,1-.171-.06.339.339,0,0,1-.049-.054A.226.226,0,0,1,7,13.85a.259.259,0,0,1,0-.067.4.4,0,0,1,.022-.072.992.992,0,0,1,.239-.322q.044-.043.1-.087a6.669,6.669,0,0,1,1.611-.931Q8.843,12.568,8.719,12.745Zm5.613-1.653a3.91,3.91,0,0,1,.714.054.475.475,0,0,1,.39.268.324.324,0,0,1,.015.089.433.433,0,0,1-.009.105c-.037.187-.235.308-.506.308a1.043,1.043,0,0,1-.107-.013.932.932,0,0,1-.122-.015,3.75,3.75,0,0,1-1.448-.715c.111-.017.218-.03.32-.04a7.275,7.275,0,0,1,.751-.04Zm-2.156-.222c-.287.059-.583.127-.883.2-.216.056-.435.117-.653.182.116-.232.223-.462.316-.681.123-.289.238-.578.344-.861.093.143.189.281.288.414s.2.258.3.38.2.238.308.349l-.025.005ZM10.694,5.879a.311.311,0,0,1,.023-.031.266.266,0,0,1,.208-.115.245.245,0,0,1,.155.05.649.649,0,0,1,.153.5,3.456,3.456,0,0,1-.048.536,8.549,8.549,0,0,1-.208.932q-.035.127-.075.259a5.367,5.367,0,0,1-.233-.758,3.713,3.713,0,0,1-.088-.618,2.179,2.179,0,0,1,.021-.462.843.843,0,0,1,.094-.289Zm5.671,5.694a.817.817,0,0,0-.051-.212.751.751,0,0,0-.153-.247,1.165,1.165,0,0,0-.291-.218,3.231,3.231,0,0,0-1.507-.282c-.215,0-.445.01-.688.031s-.5.051-.764.092a7.081,7.081,0,0,1-.837-.953,8.663,8.663,0,0,1-.523-.794q.116-.356.2-.678c.034-.126.064-.247.092-.366q.058-.252.1-.479c.018-.1.033-.206.044-.3a3.994,3.994,0,0,0,.029-.465A1.544,1.544,0,0,0,11.5,5.418a.872.872,0,0,0-.168-.094,1.03,1.03,0,0,0-.4-.074.772.772,0,0,0-.381.106.8.8,0,0,0-.287.279,1.685,1.685,0,0,0-.186.866,3.6,3.6,0,0,0,.033.425,5.893,5.893,0,0,0,.492,1.65c-.048.137-.1.274-.146.411-.1.273-.206.547-.321.832-.058.142-.118.286-.181.435a14.864,14.864,0,0,1-.733,1.486,6.864,6.864,0,0,0-2.469,1.483,1.085,1.085,0,0,0-.242.472.763.763,0,0,0-.012.189.7.7,0,0,0,.12.346.812.812,0,0,0,.129.148.861.861,0,0,0,.2.13L7,14.532a1.051,1.051,0,0,0,.181.06,1.2,1.2,0,0,0,.272.031,1.4,1.4,0,0,0,.584-.138,2.3,2.3,0,0,0,.383-.226,4.364,4.364,0,0,0,.73-.688,8.684,8.684,0,0,0,.658-.878c.153-.231.3-.465.427-.692q.3-.1.6-.189c.2-.06.4-.116.606-.168l.128-.031c.4-.1.783-.185,1.147-.248q.1.088.206.167.2.158.4.282.1.062.194.117a3.6,3.6,0,0,0,1.778.517,1.334,1.334,0,0,0,.729-.173.785.785,0,0,0,.106-.081.7.7,0,0,0,.185-.272.739.739,0,0,0,.049-.235A.8.8,0,0,0,16.365,11.573Z" transform="translate(-9507.44 -9252.136)" fill="#444"></path>
+                        </g>
+                      </svg>
+                    <span>View PDFs</span>
+                </a>
+                <a href="">
+                    <svg width="19.373" height="17.688" viewBox="0 0 19.373 17.688">
+                        <g id="Group_596630" data-name="Group 596630" transform="translate(9367.873 9248.978)">
+                          <path id="Path_625438" data-name="Path 625438" d="M11.152,14.19h-.423L7.938,16.717V14.19H2.884V4.083H16.361v6.3a5.546,5.546,0,0,1,1.685.26v-6.3a2.032,2.032,0,0,0-.59-1.432A1.858,1.858,0,0,0,16.192,2.4H3.052A1.716,1.716,0,0,0,1.789,2.9,1.987,1.987,0,0,0,1.2,4.251v9.771a1.8,1.8,0,0,0,.59,1.348,1.859,1.859,0,0,0,1.263.505h3.2v3.959a.223.223,0,0,0,.253.253A.262.262,0,0,0,6.674,20l4.212-3.734c-.011-.141-.015-.286-.015-.43A5.324,5.324,0,0,1,11.152,14.19Z" transform="translate(-9369.072 -9251.376)" fill="#444" fill-rule="evenodd"></path>
+                          <path id="Path_625439" data-name="Path 625439" d="M17.074,4.8v6.243c.045,0,.051.026.023.075h-.023a5.477,5.477,0,0,0-5.223,3.829c-.055.015-.08,0-.067-.038h-.342L8.651,17.431V14.9H3.6V4.8Z" transform="translate(-9369.785 -9252.089)" fill="#444" fill-rule="evenodd" opacity="0.1"></path>
+                          <path id="Path_625440" data-name="Path 625440" d="M5.993,10.013a.417.417,0,0,1,.421-.421h9.265a.421.421,0,1,1,0,.842H6.414A.417.417,0,0,1,5.993,10.013Zm0,2.527a.417.417,0,0,1,.421-.421h7.581a.421.421,0,1,1,0,.842H6.414A.417.417,0,0,1,5.993,12.54ZM17.787,13.8a4.212,4.212,0,1,1-4.212,4.212A4.212,4.212,0,0,1,17.787,13.8Zm.378,1.68h-.751a.469.469,0,0,0-.469.469h0v1.236l-1.2,0a.469.469,0,0,0-.469.469h0l-.008.738a.469.469,0,0,0,.469.468h1.211l.006,1.217a.468.468,0,0,0,.468.468h0l.742,0a.469.469,0,0,0,.47-.469h0l0-1.222h1.215a.469.469,0,0,0,.469-.468h0l0-.748a.468.468,0,0,0-.468-.468H18.629l0-1.221a.469.469,0,0,0-.47-.469Z" transform="translate(-9370.498 -9253.516)" fill="#444"></path>
+                        </g>
+                      </svg>
+                    <span>Edit PDFs</span>
+                </a>
+
+                <a href="">
+                    <svg width="19.206" height="17.605" viewBox="0 0 19.206 17.605">
+                        <g id="Group_596632" data-name="Group 596632" transform="translate(9237.5 9251.269)">
+                          <path id="Path_611353" data-name="Path 611353" d="M11.547,16.725c.248.36.416.712.664,1.072a1.732,1.732,0,0,0,1.249.72,2.048,2.048,0,0,0,1.745-.712,1.765,1.765,0,0,0,1.168.8h.256c.584,0,1.372-.336,2.24-2.057l.337-.632-1.08-1.248-.584,1.248c-.168.36-.416.984-.832.9a1.02,1.02,0,0,1-.584-.36,3.208,3.208,0,0,0,.5-2.417,1.13,1.13,0,0,0-.92-.712,1.242,1.242,0,0,0-1.249.712,3.89,3.89,0,0,0-.328,2.153.423.423,0,0,1-.584.36,4.642,4.642,0,0,1-.752-1.617v-.088c1.337-2.153-2.329-2.329-1.913-.176v.088c-.5.712-2.1,2.249-2.881,2.249H1.927L3.36,12.932,12.972,2.689a.256.256,0,0,1,.184-.088.285.285,0,0,1,.184.072l2.049,2.049a.332.332,0,0,1,.008.448L5.9,15.3a.8.8,0,0,0,1.168,1.088l9.5-10.131a1.947,1.947,0,0,0-.04-2.673L14.46,1.536A1.938,1.938,0,0,0,13.124,1a1.828,1.828,0,0,0-1.321.592L2.079,11.964a.771.771,0,0,0-.168.28l-1.865,5.3a.815.815,0,0,0,.1.728.823.823,0,0,0,.656.336h8A5.067,5.067,0,0,0,11.547,16.725Z" transform="translate(-9237.5 -9252.269)" fill="#444" fill-rule="evenodd"></path>
+                          <path id="Path_611354" data-name="Path 611354" d="M4.2,13.3,13.864,2.921a.251.251,0,0,1,.182-.089.28.28,0,0,1,.182.072l2.037,2.171a.338.338,0,0,1,.008.451L6.905,15.522Z" transform="translate(-9238.339 -9252.635)" fill="#444" fill-rule="evenodd"></path>
+                        </g>
+                      </svg>
+                      <span>Fill & Sign PDFs</span>
+                </a>
+            </div>
+        </div>
+        <div class="cards">
+            <a href="" class="card" style="background-color: rgb(255, 155, 9);">
+                <div class="card-content">
+                    <p class="heading">NEW IN ILLUSTRATOR</p>
+                    <h3>Create at the speed of now</h3>
+                    <p class="body">Go from the idea to illustration faster with powerful new features</p>
+                    <p class="body-link">Learn more</p>
+                </div>
+                <img src="./assets/card-1.webp" alt="illustrator">
+            </a>
+            <a href="" class="card" style="background-color: rgb(255, 16, 0);">
+                <div class="card-content">
+                    <h3 style="color: var(--white);">Meet AI Assistant for Acrobat</p>
+                        <p class="body">Ask your documents questions. Get one-click summaries for fast insights and level up your productivity</p>
+                        <p class="body-link">Learn more</p>
+                </div>
+                <img src="./assets/card-2.webp" alt="Ai Assiatant">
+            </a>
+            <a href="" class="card p-0">
+                <div class="top-card-content" style="height: 40%;padding: 32px 24px 24px 24px;background: linear-gradient(125deg, rgba(237, 5, 41, 1) 0%, rgba(155, 0, 193, 1) 50%, rgba(91, 0, 198, 1) 100%);">
+                    <h3 class="text-light">Creative Cloud</h3>
+                    <p class="body-link mb-1 text-light">Creative Cloud All Apps free trial</p>
+                    <p class="body-link mb-1 text-light">Creative Cloud for business</p>
+                    <p class="body-link mb-0 text-light">Student pricing</p>
+                </div>
+                <div class="card-content" style="background-color: rgb(237, 237, 237); padding: 32px 24px 24px 24px;">
+                    <h3>Acrobat</h3>
+                    <p class="body-link mb-1">Acrobat free trial</p>
+                    <p class="body-link mb-0">Online PDF tools</p>
+                    <br>
+                    <h3>Explore</h3>
+                    <p class="body-link mb-1">View all products</p>
+                    <p class="body-link mb-0">See all plans and pricing</p>
+                </div>
+                <div class="bottom-card-content" style="background-color: rgb(237, 237, 237); padding: 32px 24px 24px 24px;">
+                </div>
+            </a>
+            <a href="" class="card" style="background-color: rgb(164, 247, 251);">
+                <div class="card-content">
+                    <p class="heading">ADOBE PHOTOSHOP</p>
+                    <h3>Inspiration to creation. Faster</h3>
+                    <p class="body">Explore new innovations to help you to keep up with what you dream up.</p>
+                    <p class="body-link">Learn more</p>
+                </div>
+                <img src="./assets/card-3.webp" alt="photoshop">
+            </a>
+            <a href="" class="card" style="background-color: rgb(168, 13, 151);">
+                <div class="card-content">
+                    <h3 class="text-light">Adobe Express, powered by Firefly.</h3>
+                    <p class="body text-light">Get started with the all-in-one, content creation app and new generative AI features like Generative Fill, Text to Image, and Text to Template.</p>
+                    <p class="body-link text-light">Get Adobe Express free</p>
+                </div>
+                <img src="./assets/card-4.webp" alt="Adobe express">
+            </a>
+            <a href="" class="card"></a>
+            <a href="" class="card"></a>
+        </div>
+    </div>
+</body>
+</html>
