@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
+    <link rel="prefetch" as="logo" href="./assets//logo.png">
+    <link rel="prefetch" as="section-1" href="./assets/section-1.webp">
+    <link rel="prefetch" as="medium-section-1" href="./assets/medium-section-1.webp">
+    <link rel="prefetch" as="small-section-1" href="./assets/small-section-1.webp">
 </head>
 <body>
     <div class="navbar navbar-expand-lg py-1 px-lg-4 flex-column fixed-top bg-light">
@@ -23,40 +27,78 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
                     </span>
                     <a href="/" class="nav-link p-0">
-                        <img src="./assets/logo.png" alt="Adobe">
+                        <img srcset="./assets/logo.png" alt="Adobe">
                     </a>
                     <a href="/" class="nav-link p-0">Adobe</a>
                 </span>
 
                 <ul class="nav-list m-0 justify-content-evenly">
-                    <li class="nav-item"><a href="" class="nav-link">
+                    <li class="nav-item"><span class="nav-link" onclick="loadSideMenu('creative')">
                         <span class="d-block">Creativity & Design</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-                    </a></li>
-                    <li class="nav-item"><a href="" class="nav-link">
+                    </span></li>
+                    <li class="nav-item"><span class="nav-link" onclick="loadSideMenu('pdfs')">
                         <span class="d-block">PDF & E-signatures</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-                    </a></li>
-                    <li class="nav-item"><a href="" class="nav-link">
+                    </span></li>
+                    <li class="nav-item"><span class="nav-link" onclick="loadSideMenu('marketing')">
                         <span class="d-block">Marketing & Commerce</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-                    </a></li>
-                    <li class="nav-item"><a href="" class="nav-link">
+                    </span></li>
+                    <li class="nav-item"><span class="nav-link" onclick="loadSideMenu('help')">
                         <span class="d-block">Help & Support</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
-                    </a></li>
+                    </span></li>
                 </ul>
             </div>
 
-            <ul class="nav-menu m-0 justify-content-evenly">
-                <li class="nav-item"><a href="" class="nav-link">
+                <ul class="nav-menu m-0 justify-content-evenly">
+                    <li class="nav-item"><span class="nav-link" onclick="loadApps()">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 72C0 49.9 17.9 32 40 32l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40L0 72zM0 232c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48zM128 392l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40zM160 72c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48zM288 232l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40zM160 392c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48zM448 72l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40zM320 232c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48zM448 392l0 48c0 22.1-17.9 40-40 40l-48 0c-22.1 0-40-17.9-40-40l0-48c0-22.1 17.9-40 40-40l48 0c22.1 0 40 17.9 40 40z" /></svg>
-                    </a></li>
+                    </span></li>
                     <li class="nav-item"><a href="" class="nav-link">
                         <button type="button" class="btn btn-light p-0"><span>Sign in</span></button>
                     </a></li>
                 </ul>
             </div>
+        </div>
+        <div class="apps" id="apps" style="display: none;">
+            <p class="title">Web Apps</p>
+            <div class="app-grid">
+                <a href="" class="grid-item">
+                    <img alt="adobe express" srcset="./assets/adobeexpress.png">
+                    <span>Adobe Express</span>
+                </a>
+                <a href="" class="grid-item">
+                    <img alt="acobat reader" srcset="./assets/acrobat_reader.png">
+                    <span>Acrobat</span>
+                </a>
+                <a href="" class="grid-item">
+                    <img alt="ps" srcset="./assets/ps.png">
+                    <span>Photoshop</span>
+                </a>
+                <a href="" class="grid-item">
+                    <img alt="lr" srcset="./assets/lr.png">
+                    <span>Lightroom</span>
+                </a>
+                <a href="" class="grid-item">
+                    <img alt="Acrobat sign" srcset="./assets/adobe_sign.png">
+                    <span>Acrobat Sign</span>
+                </a>
+                <a href="" class="grid-item">
+                    <img alt="fonts" srcset="./assets/adobe_fonts.png">
+                    <span>Fonts</span>
+                </a>
+                <a href="" class="grid-item">
+                    <img alt="st" srcset="./assets/st.png">
+                    <span>Stock</span>
+                </a>
+                <a href="" class="grid-item">
+                    <img alt="Experience cloud" srcset="./assets/ec.png">
+                    <span>Experience Cloud</span>
+                </a>
+            </div>
+            <div class="sub-grid"></div>
         </div>
 
         <div class="nav mobile-nav flex-column start-0 d-lg-none" id="side-menu-mobile" style="display: none;">
@@ -84,11 +126,366 @@
             </a></li>
         </div>
         
-        <div class="nav-content">
-            <span>Products</span>
-            <span>Shop for</span>
-            <span>Online tools</span>
-            <span>Adobe Pro</span>
+        <div class="nav-content" id="list-menu" style="display: none;">
+            <div id="creative" class="content-section" style="display: none;">
+                <div class="cont-item">
+                    <div class="head-item">
+                        <img style="width: 25px; height: 24px;" loading="lazy" src="https://www.adobe.com/federal/assets/svgs/creative-cloud-40.svg" alt="Adobe Creative Cloud">
+                        <div class="column">
+                            <span class="bold">What is Creative</span>
+                            <span class="med">Creative apps and services for everyone</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Photographers</span>
+                        <span class="med">Lightroom, Photoshop and more</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Students and Teachers</span>
+                        <span class="med">Save over 60% of Creative Cloud</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Individuals</span>
+                        <span class="med">20+ creation apps, and Acrobat</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Business</span>
+                        <span class="med">20+ creation apps, and Acrobat</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Schools and Universities</span>
+                        <span class="med">20+ creation apps, and Acrobat</span>
+                    </div>
+                </div>
+                <div class="cont-item">
+                    <div class="item">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">Featured products</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Photoshop</span>
+                        <span class="med">Image editing and design</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Adobe Express</span>
+                        <span class="med">All-in-one design, video, photo, and PDF app</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Lightroom</span>
+                        <span class="med">Photo editing and organisation</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Illustrator</span>
+                        <span class="med">Vector graphics and illustration</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Premiere Pro</span>
+                        <span class="med">Video editing and production</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Adobe Stock</span>
+                        <span class="med">High quality licensable assets</span>
+                    </div>
+                </div>
+                <div class="cont-item">
+                    <div class="item">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">Artificial Intelligence</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">AI Overview</span>
+                        <span class="med">About AI at Adobe</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Adobe Firefly</span>
+                        <span class="med">AI powered content creation</span>
+                    </div>
+
+                    <div class="item mt-2">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">Explore</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="bold">Photo</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Graphics Design</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Video</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">illustration</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">3D & AR</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">PDF</span>
+                    </div>
+                </div>
+
+                <div class="cont-item text-wrap bg-white p-1 shadow-sm" style="max-width: 260px;">
+                    <div class="image-wrapper" style="max-width: 260px;">
+                        <img loading="lazy" alt="Adobe MAX" src="https://www.adobe.com/federal/globalnav/acom/fragments/cc/cc-promo/media_168d05efea264f933c5935f66b1fec3763ec293ee.jpeg" width="250px" height="190px">
+                        <div class="item mt-1 text-start px-1" style="max-width: 260px;">
+                            <span class="heading fw-bold mt-1 text-uppercase" style="max-width: 260px;">The Creativity Conference</span>
+                            <h3 class="mt-1" style="max-width: 260px;">Get ready for Adobe MAX</h3>
+                            <span class="med mt-1" style="max-width: 260px;">Join us for the creative event of the year Oct 14-16</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pdfs" class="content-section" style="display: none;">
+                <div class="cont-item">
+                    <div class="item">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">Explore</span>
+                    </div>
+                    <div class="head-item">
+                        <img loading="lazy" src="https://www.adobe.com/federal/assets/svgs/acrobat-pro-40.svg" alt="Adobe Acrobat">
+                        <div class="column">
+                            <span class="bold">Adobe Acrobat</span>
+                            <span class="med">The essential pdf solution</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Adobe Acrobat sign</span>
+                        <span class="med">The essential e-signature solution</span>
+                    </div>
+                    <div class="item">
+                        <span class="med text-primary">E-signature plans & solutions</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Acrobat Reader</span>
+                        <span class="med">View, scan and annotate pdfs</span>
+                    </div>
+                    <div class="item">
+                        <span class="med text-primary">View all products</span>
+                    </div>
+                </div>
+                <div class="cont-item">
+                    <div class="item">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">Shop for</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Business</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Students and teachers</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Home & Personal</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Government</span>
+                    </div>
+
+                    <div class="item mt-2">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">Artificial Intelligence</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">AI Overview</span>
+                        <span class="med">About AI at Adobe</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">AI in Acrobat</span>
+                        <span class="med">Generative AI documnet and pdf tools</span>
+                    </div>
+                </div>
+                <div class="cont-item">
+                    <div class="item">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">Online tools</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">PDF to Word</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Compress PDF</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Merge PDF</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Word to PDF</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">View all tools</span>
+                    </div>
+                </div>
+                <div class="cont-item text-wrap bg-white p-1 shadow-sm" style="max-width: 260px;">
+                    <div class="image-wrapper" style="max-width: 260px; min-width: 0;">
+                        <div class="item mt-1 text-start px-1" style="max-width: 260px;">
+                            <span class="heading fw-bold mt-1 text-uppercase" style="max-width: 260px;">The Creativity Conference</span>
+
+                            <span class="med mt-1" style="max-width: 260px;">Join us for the creative event of the year Oct 14-16</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="marketing" class="content-section" style="display: none;">
+                <div class="cont-item">
+                    <div class="head-item">
+                        <img loading="lazy" src="https://www.adobe.com/federal/assets/svgs/experience-cloud-40.svg" alt="Adobe Experience Cloud">
+                        <div class="column">
+                            <span class="bold">Adobe Experience Cloud</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Photographers</span>
+                        <span class="med">Lightroom, Photoshop and more</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Students and Teachers</span>
+                        <span class="med">Save over 60% of Creative Cloud</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Individuals</span>
+                        <span class="med">20+ creation apps, and Acrobat</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Business</span>
+                        <span class="med">20+ creation apps, and Acrobat</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Schools and Universities</span>
+                        <span class="med">20+ creation apps, and Acrobat</span>
+                    </div>
+                </div>
+                <div class="cont-item">
+                    <div class="item">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">New and coming soon</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">PDF to Word</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Compress PDF</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Merge PDF</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Word to PDF</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">View all tools</span>
+                    </div>
+                </div>
+                <div class="cont-item">
+                    <div class="item">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">See what&apos;s comming new</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">AI Overview</span>
+                        <span class="med">About AI at Adobe</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Adobe Firefly</span>
+                        <span class="med">AI powered content creation</span>
+                    </div>
+
+                    <div class="item mt-2">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">Explore</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="bold">Photo</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Graphics Design</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Video</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">illustration</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">3D & AR</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">PDF</span>
+                    </div>
+                </div>
+                <div class="cont-item text-wrap bg-white p-1 shadow-sm" style="max-width: 260px;">
+                    <div class="image-wrapper" style="max-width: 260px; min-width: 0;">
+                        <div class="item mt-1 text-start px-1" style="max-width: 260px;">
+                            <span class="heading fw-bold mt-2 text-uppercase" style="max-width: 260px;">Contact Us</span>
+                            <span class="bold mt-3 text-primary" style="max-width: 260px;">Contact us</span>
+                            <span class="bold mt-3 text-primary" style="max-width: 260px;">Request Live demo </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="help" class="content-section" style="display: none;">
+                <div class="cont-item">
+                    <div class="item">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">Help and support</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Help center</span>
+                        <span class="med">Troubleshooting and how-tos</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Enterprise support</span>
+                        <span class="med">Dedicated help for large organisations</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Adobe support community</span>
+                    </div>
+                </div>
+                <div class="cont-item">
+                    <div class="item">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">Common tasks</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Manage my account</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Manage my plan</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Subscribe to Adobe status</span>
+                    </div>
+                </div>
+                <div class="cont-item">
+                    <div class="item">
+                        <span style="font-size: 14px; font-weight: 700;" class="py-2 border-bottom ">Common tasks</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Help center</span>
+                        <span class="med">Troubleshooting and how-tos</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">Enterprise support</span>
+                        <span class="med">Dedicated help for large organisations</span>
+                    </div>
+
+                    <div class="item">
+                        <span class="bold">AI Overview</span>
+                        <span class="med">About AI at Adobe</span>
+                    </div>
+                    <div class="item">
+                        <span class="bold">AI in Acrobat</span>
+                        <span class="med">Generative AI documnet and pdf tools</span>
+                    </div>
+                </div>
+                <div class="cont-item">
+                    <div class="cont-item text-wrap bg-dark p-1 shadow-sm" style="max-width: 260px;">
+                        <div class="image-wrapper" style="max-width: 260px;">
+                            <img loading="lazy" alt="" src="https://www.adobe.com/federal/globalnav/acom/fragments/help/help-promo/media_10cd78c92c1e7055f352846809d585603662ac6c3.png" width="250px" height="190px">
+                            <div style="max-width: 260px;" class="text-wrap mt-1 text-start text-white px-1" style="max-width: 260px;">
+                                <span class="heading">Make social content and more with Adobe Express video tutorials.</span>
+                                <br>
+                                <span class="bold" style="max-width: 260px;">Get started</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -159,7 +556,7 @@
                     <p class="body">Go from the idea to illustration faster with powerful new features</p>
                     <p class="body-link">Learn more</p>
                 </div>
-                <img src="./assets/card-1.webp" alt="illustrator">
+                <img srcset="./assets/card-1.webp" alt="illustrator" width="310px">
             </a>
             <a href="" class="card" style="background-color: rgb(255, 16, 0);">
                 <div class="card-content">
@@ -167,7 +564,7 @@
                         <p class="body">Ask your documents questions. Get one-click summaries for fast insights and level up your productivity</p>
                         <p class="body-link">Learn more</p>
                 </div>
-                <img src="./assets/card-2.webp" alt="Ai Assiatant">
+                <img srcset="./assets/card-2.webp" alt="Ai Assiatant" width="325px">
             </a>
             <a href="" class="card p-0">
                 <div class="top-card-content" style="height: 40%;padding: 32px 24px 24px 24px;background: linear-gradient(125deg, rgba(237, 5, 41, 1) 0%, rgba(155, 0, 193, 1) 50%, rgba(91, 0, 198, 1) 100%);">
@@ -195,7 +592,7 @@
                     <p class="body">Explore new innovations to help you to keep up with what you dream up.</p>
                     <p class="body-link">Learn more</p>
                 </div>
-                <img src="./assets/card-3.webp" alt="photoshop">
+                <img srcset="./assets/card-3.webp" alt="photoshop" width="325px">
             </a>
             <a href="" class="card" style="background-color: rgb(168, 13, 151);">
                 <div class="card-content">
@@ -203,10 +600,211 @@
                     <p class="body text-light">Get started with the all-in-one, content creation app and new generative AI features like Generative Fill, Text to Image, and Text to Template.</p>
                     <p class="body-link text-light">Get Adobe Express free</p>
                 </div>
-                <img src="./assets/card-4.webp" alt="Adobe express">
+                <img srcset="./assets/card-4.webp" alt="Adobe express" width="325px">
             </a>
-            <a href="" class="card"></a>
-            <a href="" class="card"></a>
+            <a href="" class="card" style="background-image: url(./assets/card-6.webp); background-size: cover; background-position: center;">
+                <div class="card-content">
+                    <p class="heading">Business</p>
+                    <h3>34% off the first year on Creative Cloud All Apps</h3>
+                    <p class="body">
+                        Get up to 9 licenses for your team at a lower price. See terms *
+                    </p>
+                    <p class="body-link">Learn more</p>
+                </div>
+            </a>
+            <a href="" class="card" style="background-color: rgb(94, 83, 221);background-image: url(./assets/card-7.webp);background-position: center; background-size: cover;">
+                <div class="card-content text-light">
+                    <p class="heading">Adobe Genstudio</p>
+                    <h3>Accelerate your marketing content</h3>
+                    <p class="body">Plan, create, distribute, activate and measure content</p>
+                    <p class="body-link">Learn more</p>
+                </div>
+            </a>
+            <a href="" class="card" style="background-image: url(./assets/card-8.webp); background-position: center; background-size: cover;">
+                <div class="card-content">
+                    <p class="heading">Students and teachers</p>
+                    <h3>Save over 60% on Creative Cloud</h3>
+                    <p class="body">
+                        Go from standard to standout with 20+ amazing apps.
+                    </p>
+                    <p class="body-link">Learn more</p>
+                </div>
+            </a>
+            <a href="" class="card" style="background-image: url(./assets/card-9.webp);background-position: center;background-size:cover;">
+                <div class="card-content">
+                    <h3>Your imagination&apos;s new best friend.</h3>
+                    <p class="body">Use generative AI and simple text prompts to create the highest quality output — beautiful images, text effects and fresh colour palettes.</p>
+                    <p class="body-link">Get Firefly free</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="p-section">
+            <p class="heading">Shop for</p>
+            <a href="">Creative Cloud</a>
+            <a href="">Photoshop</a>
+            <a href="">Adobe Express</a>
+            <a href="">Photography</a>
+            <a href="">Premiere Pro</a>
+            <a href="">Adobe Stock</a>
+            <a href="">Elements Family</a>
+            <a href="">Document Cloud</a>
+            <a href="">Acrobat</a>
+            <a href="">Acrobat Sign</a>
+            <a href="">Special Offers</a>
+            <a href="">View plans and pricing</a>
+            <a href="">View all products</a>
+        </div>
+        <div class="p-section">
+            <p class="heading">For Business</p>
+            <a href="">Creative Cloud for business</a>
+            <a href="">Creative Cloud for enterprise</a>
+            <a href="">Acrobat business</a>
+            <p class="heading" style="margin-top: 20px;">For Education</p>
+            <a href="">Discount for students and teachers</a>
+            <a href="">Schools and universities</a>
+            <a href="">Digital Learning Solutions</a>
+            <p class="heading" style="margin-top: 20px;">For Mobile</p>
+            <a href="">Apps for IOS</a>
+            <a href="">Apps for Android</a>
+        </div>
+        <div class="p-section">
+            <p class="heading">Experience Cloud</p>
+            <a href="">What is Experience Cloud?</a>
+            <a href="">Analytics</a>
+            <a href="">Experience Manager</a>
+            <a href="">Commerce</a>
+            <a href="">Marketo Engage</a>
+            <a href="">Wrokfront</a>
+            <a href="">Terms of use</a>
+        </div>
+        <div class="p-section">
+            <p class="heading">Support</p>
+            <a href="">Download and install</a>
+            <a href="">Help center</a>
+            <a href="">Adobe Support Community</a>
+            <a href="">Enterprise Support</a>
+            <a href="">Genuine Software</a>
+            <p class="heading" style="margin-top: 20px;">Resource</p>
+            <a href="">Adobe Blog</a>
+            <a href="">Adobe Developer</a>
+            <p class="heading" style="margin-top: 20px;">Adobe Account</p>
+            <a href="">Log into your account</a>
+        </div>
+        <div class="p-section">
+            <p class="heading">Adobe</p>
+            <a href="">About</a>
+            <a href="">AI Overview</a>
+            <a href="">Careers</a>
+            <a href="">Newsrooms</a>
+            <a href="">Corporate Responsibility</a>
+            <a href="">Investor Relations</a>
+            <a href="">Supply chain</a>
+            <a href="">Trust center</a>
+            <a href="">Events</a>
+            <a href="">Diversity and inclusion</a>
+            <a href="">Intergrity</a>
+        </div>
+    </div>
+
+    <div class="products-mobile">
+        <div class="p-section">
+
+        </div>
+        <div class="p-section">
+            <span class="heading">Shop for</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+        </div>
+        <div class="p-section">
+            <span class="heading">For business</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>    
+        </div>
+        <div class="p-section">
+            <span class="heading">For education</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+        </div>
+        <div class="p-section">
+            <span class="heading">For mobile</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>    
+        </div>
+        <div class="p-section">
+            <span class="heading">Experience Cloud</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>    
+        </div>
+        <div class="p-section">
+            <span class="heading">Support</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>    
+        </div>
+        <div class="p-section">
+            <span class="heading">Resources</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>    
+        </div>
+        <div class="p-section">
+            <span class="heading">Adobe Account</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>    
+        </div>
+    </div>
+
+    <div class="section-3">
+        <div class="icons">
+            <p>Featured Products</p>
+            <a href="">
+                <img loading="lazy" alt="" src="https://www.adobe.com/federal/footer/fragments/media_1d6689110cb22e2f8141cf6b4ff4e5e91260e5d51.png" width="100" height="98">
+                <span>Acrobact Reader</span>
+            </a>
+
+            <a href="">
+                <img loading="lazy" alt="" src="https://www.adobe.com/federal/footer/fragments/media_1ac414dfef628bd50cdfb885ed27e2e95e504ec5a.png" width="100" height="98">
+                <span>Adobe Reader</span>
+            </a>
+
+            <a href="">
+                <img loading="lazy" alt="" src="https://www.adobe.com/federal/footer/fragments/media_193d7ad6fda77267eb7f7b86e95aeb7d7a11df041.png" width="100" height="97">
+                <span>Photoshop</span>
+            </a>
+            <a href="">
+                <img loading="lazy" alt="" src="https://www.adobe.com/federal/footer/fragments/media_1ca1b5ac9637e42fdb5673d96be80818f0c9fc9bf.png" width="100" height="97">
+                <span>Illustrator</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-section">
+        <div class="footer-item" style="gap: 10px;">
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.9 21.9"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10M9.254 20.047a8 8 0 0 1-.768-1.378c-.404-.91-.722-1.985-.935-3.169h-3.3a8.53 8.53 0 0 0 5.003 4.547m.603-1.988c.336.757.718 1.324 1.103 1.69.382.364.732.501 1.04.501s.658-.137 1.04-.5c.385-.367.767-.934 1.103-1.69.321-.723.588-1.59.78-2.56H9.076c.192.97.459 1.837.78 2.56ZM8.75 12q.001 1.038.103 2h6.294q.102-.962.103-2-.001-1.038-.103-2H8.853q-.102.962-.103 2m-1.405-2H3.737a8.5 8.5 0 0 0-.237 2c0 .689.082 1.359.237 2h3.608a21 21 0 0 1 0-4m1.732-1.5h5.845c-.19-.97-.458-1.837-.779-2.56-.336-.756-.718-1.323-1.103-1.69-.382-.363-.732-.5-1.04-.5s-.658.137-1.04.5c-.385.367-.767.934-1.103 1.69-.321.723-.588 1.59-.78 2.56m7.577 1.5a20.7 20.7 0 0 1 0 4h3.61a8.5 8.5 0 0 0 .236-2 8.5 8.5 0 0 0-.237-2zm3.094-1.5a8.53 8.53 0 0 0-5.002-4.547c.287.408.543.873.768 1.378.404.91.722 1.985.935 3.169h3.3Zm-12.197 0c.213-1.184.531-2.26.935-3.169.225-.505.48-.97.768-1.378A8.53 8.53 0 0 0 4.252 8.5zm7.963 10.169c-.225.505-.48.97-.768 1.378a8.53 8.53 0 0 0 5.002-4.547h-3.3c-.212 1.184-.53 2.26-.934 3.169"></path></svg>
+                <span>Change region</span>
+                <svg href="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </a>
+
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/></svg>
+            </a>
+
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg>
+            </a>
+            <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+            </a>
+        </div>
+        <div class="footer-item" style="gap: 5px; display: inline-flex;">
+            <span class="copy">Copyright © 2024 Adobe. All rights reserved.</span>
+            <span>/</span>
+            <a href="" style="width: 35px;">Privacy</a>
+            <span>/</span>
+            <a href="" style="width: 75px;">Terms of use</a>
+            <span>/</span>
+            <a href="" style="width: 105px;">Cookie preference</a>
+            <span>/</span>
+            <a href="" style="width: 245px;">Do not sell or share my personal information</a>
+            <span>/</span>
+            <a href="">AdChoices</a>
         </div>
     </div>
 </body>
